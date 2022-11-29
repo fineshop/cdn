@@ -1,6 +1,6 @@
 {
   "name": "Fineshop Design",
-  "short_name": "Fineshop Design",
+  "short_name": "Fineshop App",
   "description": "Install Now Fineshop Design - Let's fuel creativity",
   "display": "standalone",
   "prefer_related_applications": false,
@@ -118,6 +118,6 @@
     }
   ],
   "serviceworker": {
-    "src": "/sw.js"
+    "src": "/cdn/app/pwa/sw.js"
   }
 }
