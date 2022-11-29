@@ -1,2 +1,2 @@
-# Fineshop Design CDN
-Files in this branch can be accessed via https://api.fineshopdesign.com/cdn/file_location
+# Fineshop Design WebApp CDN
+Files in this branch can be accessed via https://www.fineshopdesign.com/app/cdn/file_location
