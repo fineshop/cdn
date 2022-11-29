@@ -1,0 +1,12 @@
+<svg width='512' height='512' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 77.57'>
+  <defs>
+    <style>
+      .cls-1{fill:#52F3E4;stroke:none}
+      .cls-2{fill:#9457F6;stroke:none}
+      .cls-3{fill:#0FBFF2;stroke:none}
+    </style>
+  </defs>
+  <path class='cls-1' d='M1,39.9V13.1A12.1,12.1,0,0,1,13.1,1H39.9a9.08,9.08,0,0,1,6.42,15.5L16.5,46.32A9.08,9.08,0,0,1,1,39.9Z'/>
+  <path class='cls-2' d='M1,67.47V42.34L34.25,28.57H39.9a9.07,9.07,0,0,1,6.42,15.49L16.5,73.89A9.08,9.08,0,0,1,1,67.47Z'/>
+  <path class='cls-3' d='M16.5,46.32,34.25,28.57H12.09A11.09,11.09,0,0,0,1,39.66v.24A9.08,9.08,0,0,0,16.5,46.32Z'/>
+</svg>
