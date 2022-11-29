@@ -9,12 +9,12 @@ if (workbox) {
     runtime: 'run-time'
   });
 
-  const FALLBACK_HTML_URL = '/web/app/pwa/offline.html';
+  const FALLBACK_HTML_URL = '/cdn/app/pwa/offline.html';
   const version = workbox.core.cacheNames.suffix;
   workbox.precaching.precacheAndRoute([
     { url: FALLBACK_HTML_URL, revision: null },
-    { url: '/web/cdn/manifest.json', revision: null },
-    { url: '/main/favicon.ico', revision: null }
+    { url: '/cdn/manifest.json', revision: null },
+    { url: '/cdn/assets/favicon.ico', revision: null }
   ]);
 
   workbox.routing.setDefaultHandler(new workbox.strategies.NetworkOnly());
