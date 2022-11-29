@@ -13,7 +13,7 @@ if (workbox) {
   const version = workbox.core.cacheNames.suffix;
   workbox.precaching.precacheAndRoute([
     { url: FALLBACK_HTML_URL, revision: null },
-    { url: '/web/manifest.json', revision: null },
+    { url: '/web/cdn/manifest.json', revision: null },
     { url: '/main/favicon.ico', revision: null }
   ]);
 
