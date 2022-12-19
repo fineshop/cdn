@@ -14,7 +14,7 @@ if (workbox) {
   workbox.precaching.precacheAndRoute([
     { url: FALLBACK_HTML_URL, revision: null },
     { url: '/cdn/manifest.json', revision: null },
-    { url: '/cdn/assets/favicon.ico', revision: null }
+    { url: '/cdn/images/favicon.ico', revision: null }
   ]);
 
   workbox.routing.setDefaultHandler(new workbox.strategies.NetworkOnly());
