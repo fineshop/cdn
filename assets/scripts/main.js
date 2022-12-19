@@ -60,7 +60,7 @@ Defer.dom('.lazy', 100, 'loaded', null, {
     navigator.serviceWorker.register(a.source, {
       scope: a.scope
     }).then(a => {
-      console.groupCollapsed("%c[PWA] SW Registration Successuful.", "color:#43a047"), console.log("[SW] Source:", "/web/cdn/app/pwa/sw.js"), console.log("[SW] Scope:", a.scope), console.groupEnd()
+      console.groupCollapsed("%c[PWA] SW Registration Successuful.", "color:#43a047"), console.log("[SW] Source:", a.source), console.log("[SW] Scope:", a.scope), console.groupEnd()
     }).catch(a => {
       console.groupCollapsed("%c[PWA] SW Registration Failed.", "color:#d32f2f"), console.log("[SW] Error: ", a), console.groupEnd()
     })
