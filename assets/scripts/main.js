@@ -66,7 +66,7 @@ Defer.dom('.lazy', 100, 'loaded', null, {
     })
   })
 }({
-  source: "/cdn/app/pwa/sw.js",
+  source: "/cdn/app/pwa/serviceworker.js",
   scope: "/"
 });
 /* Material Icons */
