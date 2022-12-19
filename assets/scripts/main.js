@@ -59,10 +59,10 @@ Defer.dom('.lazy', 100, 'loaded', null, {
   "navigator" in window && "serviceWorker" in window.navigator && document.addEventListener("DOMContentLoaded", () => {
     navigator.serviceWorker.register(a.source, {
       scope: a.scope
-    }).then(a => {
-      console.groupCollapsed("%c[PWA] SW Registration Successuful.", "color:#43a047"), console.log("[SW] Source:", a.source), console.log("[SW] Scope:", a.scope), console.groupEnd()
-    }).catch(a => {
-      console.groupCollapsed("%c[PWA] SW Registration Failed.", "color:#d32f2f"), console.log("[SW] Error: ", a), console.groupEnd()
+    }).then(r => {
+      console.groupCollapsed("%c[PWA] SW Registration Successuful.", "color:#43a047"), console.log("[SW] Source:", a.source), console.log("[SW] Scope:", r.scope), console.groupEnd()
+    }).catch(e => {
+      console.groupCollapsed("%c[PWA] SW Registration Failed.", "color:#d32f2f"), console.log("[SW] Error: ", e), console.groupEnd()
     })
   })
 }({
