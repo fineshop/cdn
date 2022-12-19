@@ -1,12 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--[ Tools title ]-->
   <title>Fineshop Tools</title>
+  <!--[ Meta for browser ]-->
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!--[ Browser data, description and keyword ]-->
+  <meta content="" name="description"/>
+  <meta content="Fineshop Design, Highlighter, Plus UI, Blogger widgets, Blogger tutorials, html, css, javascript, coding, programming, tech, seo " name="keywords"/>
+  <!--[ Theme Color ]-->
+  <meta content="#482dff" name="theme-color"/>
+  <meta content="#482dff" name="msapplication-navbutton-color"/>
+  <meta content="#482dff" name="apple-mobile-web-app-status-bar-style"/>
+  <meta content="true" name="apple-mobile-web-app-capable"/>
+  <!--[ Favicon ]-->
+  <meta content="/cdn/images/ms-icon-144x144.png" name="msapplication-TileImage"/>
+  <link href="/cdn/images/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+  <link href="/cdn/images/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/>
+  <link href="/cdn/images/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+  <link href="/cdn/images/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+  <link href="/cdn/images/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+  <link href="/cdn/images/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+  <link href="/cdn/images/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+  <link href="/cdn/images/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+  <link href="/cdn/images/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="/cdn/images/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+  <link href="/cdn/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="/cdn/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="/cdn/images/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+  <link href="/cdn/images/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="/cdn/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <!--[ Manifest ]-->
+  <!--<link href="/cdn/manifest.json" rel="manifest"/>-->
+  <!--[ Open graph ]-->
+  <meta content="Fineshop Design" property="og:title"/>
+  <meta content="https://www.fineshopdesign.com/tools/syntax-highlighter" property="og:url"/>
+  <meta content="Fineshop Design" property="og:site_name"/>
+  <meta content="website" property="og:type"/>
+  <meta content="The Best Website where you can find Blogger Widgets, Tech News, Tech Reviews, Coding related Tutorials and many more." property="og:description"/>
+  <meta content="Fineshop Design" property="og:image:alt"/>
+  <meta content="https://1.bp.blogspot.com/-Y87XSHXfRwc/YgJF1axHpvI/AAAAAAAACSY/5KKOYgp2trYXwQv3oqNDn_8Ee42P63TzwCNcBGAsYHQ/s1280-rw/Fineshop_Design.webp" property="og:image"/>
+  <!--[ Twitter Card ]-->
+  <meta content='Fineshop Design' name='twitter:title'/>
+  <meta content='https://www.fineshopdesign.com/tools/syntax-highlighter' name='twitter:url'/>
+  <meta content='The Best Website where you can find Blogger Widgets, Tech News, Tech Reviews, Coding related Tutorials and many more.' name='twitter:description'/>
+  <meta content='summary_large_image' name='twitter:card'/>
+  <meta content='Fineshop Design' name='twitter:image:alt'/>
+  <meta content='https://1.bp.blogspot.com/-Y87XSHXfRwc/YgJF1axHpvI/AAAAAAAACSY/5KKOYgp2trYXwQv3oqNDn_8Ee42P63TzwCNcBGAsYHQ/s1280-rw/Fineshop_Design.webp' name='twitter:image:src'/>
+  <!--[ DNS Prefetch and Preconnect ]-->
+  <link crossorigin='anonymous' href='//cdn.jsdelivr.net' rel='dns-prefetch preconnect'/>
+  <link crossorigin='anonymous' href='//www.gstatic.com' rel='dns-prefetch preconnect'/>
+  <link crossorigin='anonymous' href='//fonts.gstatic.com' rel='dns-prefetch preconnect'/>
+  <link crossorigin='anonymous' href='//script.google.com' rel='dns-prefetch preconnect'/>
+  <link crossorigin='anonymous' href='//api.fineshopdesign.com' rel='dns-prefetch preconnect'/>
+  <!--[ Stylesheets ]-->
+  <link rel="stylesheet" href="/tools/common/css/main.css"/>
+  <link rel="stylesheet" href="/src/style.css"/>
+  <!--[ Adsense Script ]-->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6450536625798530" crossorigin="anonymous"></script>
+  <!--[ Libraries ]-->
+  <script src="//api.fineshopdesign.com/cdn/libs/axios/1.2.1/axios.min.js"></script>
+  <!--[ Scripts ]-->
+  <script src="/tools/common/js/main.js"></script>
 </head>
+
 <body>
-  <script src="./script.js"></script>
+  <div class="main-wrapper">
+    <header>
+      <div class="header-wrapper">
+        <div class="header-right">
+          <h1 class="header-title">Fineshop Tools</h1>
+        </div>
+        <div class="header-left">
+          <ul class="header-actions">
+            <li>
+              <button class="toogle-dark" onClick="toogleMode()">
+                <i data-icon="dark_mode"></i>
+                <i data-icon="light_mode"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <nav>
+  
+    </nav>
+    <main>
+      <!--[ Advertisements area ]-->
+      <div class="ads-area">
+        <!--[ Fineshop - Top Widget Ad ]-->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6450536625798530"
+             data-ad-slot="2684491596"
+             data-ad-format="auto"
+             data-full-width-responsive="true">
+        </ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({})</script>
+      </div>
+    </main>
+  </div>
+  <!--[ Modular scripts ]-->
+  <script type="module" src="/src/script.js"></script>
 </body>
+
 </html>

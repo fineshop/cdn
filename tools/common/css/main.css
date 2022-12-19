@@ -1,0 +1,124 @@
+/* root variables */
+:root{
+  /* Font vars */
+  --font-head: 'Google Sans Text', Arial, Helvetica, sans-serif;
+  --font-body: 'Google Sans Text', Arial, Helvetica, sans-serif;
+  --font-body-alt: 'Google Sans Text', Arial, Helvetica, sans-serif;
+  --font-code: 'Google Sans Mono', monospace;
+  --font-icon: 'Google Material Icons';
+
+  /* Selection vars */
+  --selection-color: white;
+  --selection-bg: red;
+
+  /* Body vars */
+  --body-color: black;
+  --body-bg: rgb(255, 255, 255);
+
+  /* header vars */
+  --header-bg: #fff;
+  --header-color: red;
+  --header-height: 60px;
+  --header-border: rgba(0, 0, 0, .15);
+  --header-font-size: 1.1rem;
+  --header-font-weight: 400;
+
+  /* Links vars */
+  --link-color: blue;
+  --link-bg: red;
+
+  /* Button vars */
+  --button-color: red;
+  --button-bg: red;
+
+  /* Form field vars */
+  --input-bg: var(--body-bg);
+  --input-color: var(--bodyC);
+  --input-border: #dadce4;
+  --input-border-on: blue;
+  --input-label-color: #444746;
+  --textarea-height: 100px;
+  --textarea-height-on: 200px;
+  --textarea-height-max: 500px;
+  --button-bg: #ffdbc9;
+  --button-color: #341000;
+
+  /* Syntax vars */
+  --syntax-bg: rgb(241, 241, 241);
+  --syntax-color: yellow;
+
+  /* Transitions */
+  --transition-1: all 0.1s ease;
+  --transition-2: all 0.2s ease;
+  --transition-3: all 0.3s ease;
+  --transition-4: all 0.4s ease;
+}
+:root.dark{
+  /* Body vars */
+  --body-color: #ffffff;
+  --body-bg: rgb(36, 33, 45);
+
+  /* header vars */
+  --header-bg: #fff;
+  --header-color: red;
+  --header-height: 60px;
+  --header-border: rgb(158, 158, 158);
+  --header-font-size: 1.1rem;
+  --header-font-weight: 400;
+}
+/* Font: Google Material Icons */
+@font-face{font-family:'Google Material Icons';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/googlematerialicons/v130/Gw6kwdfw6UnXLJCcmafZyFRXb3BL9rvi0QZG2w.woff) format('woff');}
+@font-face{font-family:'Google Material Icons';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/googlematerialicons/v130/Gw6kwdfw6UnXLJCcmafZyFRXb3BL9rvi0QZG3Sy7X00.woff2) format('woff2');}
+/* Font: Google Sans Text */
+@font-face{font-family:'Google Sans Text';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/googlesanstext/v21/5aUu9-KzpRiLCAt4Unrc-xIKmCU5mE4.woff) format('woff')}
+@font-face{font-family:'Google Sans Text';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/googlesanstext/v21/5aUp9-KzpRiLCAt4Unrc-xIKmCU5oLlVrmw.woff) format('woff')}
+@font-face{font-family:'Google Sans Text';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/googlesanstext/v21/5aUu9-KzpRiLCAt4Unrc-xIKmCU5qE52i0VBuxOCBA.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Google Sans Text';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/googlesanstext/v21/5aUu9-KzpRiLCAt4Unrc-xIKmCU5qEl2i0VBuxOCBA.woff2) format('woff2');unicode-range:U+0370-03FF}
+@font-face{font-family:'Google Sans Text';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/googlesanstext/v21/5aUu9-KzpRiLCAt4Unrc-xIKmCU5qEV2i0VBuxOCBA.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB}
+@font-face{font-family:'Google Sans Text';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/googlesanstext/v21/5aUu9-KzpRiLCAt4Unrc-xIKmCU5qER2i0VBuxOCBA.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Google Sans Text';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/googlesanstext/v21/5aUu9-KzpRiLCAt4Unrc-xIKmCU5qEp2i0VBuxM.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Google Sans Text';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/googlesanstext/v21/5aUp9-KzpRiLCAt4Unrc-xIKmCU5oLlVnmxjtjm4DZzFQQ.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Google Sans Text';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/googlesanstext/v21/5aUp9-KzpRiLCAt4Unrc-xIKmCU5oLlVnmtjtjm4DZzFQQ.woff2) format('woff2');unicode-range:U+0370-03FF}
+@font-face{font-family:'Google Sans Text';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/googlesanstext/v21/5aUp9-KzpRiLCAt4Unrc-xIKmCU5oLlVnmdjtjm4DZzFQQ.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB}
+@font-face{font-family:'Google Sans Text';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/googlesanstext/v21/5aUp9-KzpRiLCAt4Unrc-xIKmCU5oLlVnmZjtjm4DZzFQQ.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Google Sans Text';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/googlesanstext/v21/5aUp9-KzpRiLCAt4Unrc-xIKmCU5oLlVnmhjtjm4DZw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* Font: Google Sans Mono */
+@font-face{font-family:'Google Sans Mono';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/googlesansmono/v4/P5sUzYWFYtnZ_Cg-t0Uq_rfivrdYH4RE8-pZ5gQ1abT53wVQGrk.woff2) format('woff2')}/* basic style */
+/* Material Icons css */
+.m-icon,[data-icon]::before{font-family:var(--font-icon);font-weight:400;font-style:normal;font-size:inherit;letter-spacing:normal;text-transform:none;text-decoration:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;text-rendering:optimizeLegibility;font-feature-settings:'liga';font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;vertical-align:middle;line-height:normal;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+[data-icon]{display:inline-flex;align-items:center;justify-content:center}
+[data-icon]::before{content:attr(data-icon)}
+.m-icon.mR,.mR[data-icon]{margin-right:8px}
+.m-icon.mL,.mL[data-icon]{margin-left:8px}
+/* Standard styles */
+::selection{color:var(--selection-color);background:var(--selection-bg)}
+.drK ::selection{background:var(--darkU)}
+*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{-webkit-font-smoothing:antialiased;position:relative;top:0!important;margin:0;padding:0;width:100%;font-family:var(--font-body);font-size:14px;color:var(--body-color);background:var(--body-bg);-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4,h5,h6{margin:0;font-weight:700;font-family:var(--font-head);color:var(--head-color)}
+h1{font-size:1.9rem}
+h2{font-size:1.7rem}
+h3{font-size:1.5rem}
+h4{font-size:1.4rem}
+h5{font-size:1.3rem}
+h6{font-size:1.2rem}
+a{color:var(--link-color);text-decoration:none}
+a:hover{opacity:.9;transition:opacity .1s}
+table{border-spacing:0}
+iframe{max-width:100%;border:0;margin-left:auto;margin-right:auto}
+button,input,select,textarea{font:inherit;font-size:100%;color:inherit;line-height:normal}
+input::placeholder{color:rgba(0,0,0,.5)}
+img{display:block;position:relative;max-width:100%;height:auto}svg{width:22px;height:22px;fill:var(--iconC)}
+svg .line,svg.line{fill:none!important;stroke:var(--iconC);stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+.hidden{display:none!important}
+.invisible{visibility:hidden!important}
+svg .svgC{fill:var(--linkC)}
+svg.line .svgC{fill:none;stroke:var(--linkC)}
+.drK svg .svgC{fill:var(--darkU)}
+.drK svg.line .svgC{fill:none;stroke:var(--darkU)}
+
+button{outline:none;border:none;padding:0;margin:0;cursor:pointer}
+button[disabled]{cursor:not-allowed}
+fieldset{outline:none;border:none;background:transparent;padding:0;margin:0}
+fieldset[disabled], fieldset[disabled] *{cursor:not-allowed}
