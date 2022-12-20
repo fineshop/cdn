@@ -56,6 +56,15 @@
   --transition-2: all 0.2s ease;
   --transition-3: all 0.3s ease;
   --transition-4: all 0.4s ease;
+
+  /* Scrollbar vars */
+  --scrollbar-height: 5px;
+  --scrollbar-width: 8px;
+  --scrollbar-track-bg: rgba(0, 0, 0, .05);
+  --scrollbar-thumb-bg: rgba(0, 0, 0, .20);
+  --scrollbar-thumb-hover-bg: rgba(0, 0, 0, .35);
+  --scrollbar-thumb-active-bg: rgba(0, 0, 0, .40);
+  --scrollbar-thumb-radius: 2px;
 }
 :root.dark{
   /* Body vars */
@@ -66,7 +75,7 @@
   --header-bg: #25222d;
   --header-color: red;
   --header-height: 60px;
-  --header-border: rgb(158, 158, 158);
+  --header-border: #777777;
   --header-font-size: 1.1rem;
   --header-font-weight: 400;
 }
@@ -121,6 +130,8 @@ svg .svgC{fill:var(--linkC)}
 svg.line .svgC{fill:none;stroke:var(--linkC)}
 .drK svg .svgC{fill:var(--darkU)}
 .drK svg.line .svgC{fill:none;stroke:var(--darkU)}
+.full-close{position:fixed;top:-30%;right:-30%;bottom:-30%;left:-30%;background:rgba(0,0,0,.4);z-index:12;visibility:hidden;opacity:0;transition:var(--transition-1)}
+
 
 button{outline:none;border:none;padding:0;margin:0;cursor:pointer}
 button[disabled]{cursor:not-allowed}
