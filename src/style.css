@@ -250,18 +250,6 @@ html.dark .main-menu {
     opacity: 1;
   }
 }
-.full-close {
-  position: fixed;
-  top: -30%;
-  right: -30%;
-  bottom: -30%;
-  left: -30%;
-  background: rgba(0,0,0,0.4);
-  z-index: 12;
-  visibility: hidden;
-  opacity: 0;
-  transition: var(--transition-1);
-}
 .page-cont {
   flex-grow: 1;
   padding: 20px 20px 0;
