@@ -78,6 +78,7 @@ html.dark .toogle-dark [data-icon="dark_mode"], html:not(.dark) .toogle-dark [da
   display: flex;
 }
 
+/** Main Menu */
 .main-menu {
   --menu-link-after-bg: rgb(255, 90, 90);
   --menu-link-bg: rgb(255, 230, 230);
@@ -97,9 +98,6 @@ html.dark .main-menu {
 }
 .menu-cont {
   height: calc(100vh - var(--header-height) + 1px);
-}
-.main-cont {
-  width: calc(100% - var(--nav-width));
 }
 .menu-links, .menu-links >li >ul {
   margin: 0;
@@ -200,6 +198,21 @@ html.dark .main-menu {
 .menu-links >li >ul >li > *:first-child:hover {
   background: var(--menu-link-bg)
 }
+/** Main Cont */
+.main-cont {
+  width: calc(100% - var(--nav-width));
+  position: relative;
+  flex-grow: 1;
+  transition: width 0.1s ease;
+}
+
+/** Page Cont */
+.page-cont {
+  padding: 20px 20px 0;
+  margin: 0 auto;
+  position: relative;
+  max-width: var(--content-width);
+}
 @media screen and (min-width: 897px) {
   .menu-wrapper {
     position: sticky;
@@ -249,12 +262,6 @@ html.dark .main-menu {
     visibility: visible;
     opacity: 1;
   }
-}
-.page-cont {
-  flex-grow: 1;
-  padding: 20px 20px 0;
-  position: relative;
-  transition: var(--trans-1);
 }
 
 /* Responsive */
