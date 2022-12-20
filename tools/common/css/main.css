@@ -23,6 +23,10 @@
   --header-font-size: 1.1rem;
   --header-font-weight: 400;
 
+  /* Navigation vars */
+  --nav-width: 250px;
+  --nav-bg: var(--header-bg);
+
   /* Links vars */
   --link-color: blue;
   --link-bg: red;
@@ -59,7 +63,7 @@
   --body-bg: rgb(36, 33, 45);
 
   /* header vars */
-  --header-bg: #fff;
+  --header-bg: #25222d;
   --header-color: red;
   --header-height: 60px;
   --header-border: rgb(158, 158, 158);

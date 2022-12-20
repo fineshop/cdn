@@ -60,7 +60,7 @@
   <link rel="stylesheet" href="/tools/common/css/main.css"/>
   <link rel="stylesheet" href="/tools/style.css"/>
   <!--[ Adsense Script ]-->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6450536625798530" crossorigin="anonymous"></script>
+  <!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6450536625798530" crossorigin="anonymous"></script>-->
   <!--[ Libraries ]-->
   <script src="//api.fineshopdesign.com/cdn/libs/axios/1.2.1/axios.min.js"></script>
   <!--[ Scripts ]-->
@@ -72,7 +72,7 @@
     <header>
       <div class="header-wrapper">
         <div class="header-right">
-          <button class="header-hamburgur header-button">
+          <button class="header-hamburgur header-button" onclick="toggleMainMenu()">
             <i data-icon="menu_open"></i>
           </button>
           <a href="/tools" class="header-link">
@@ -82,7 +82,7 @@
         <div class="header-left">
           <ul class="header-actions">
             <li>
-              <button class="header-button toogle-dark" onClick="toogleMode()">
+              <button class="header-button toogle-dark" onclick="toggleMode()">
                 <i data-icon="dark_mode"></i>
                 <i data-icon="light_mode"></i>
               </button>
@@ -91,24 +91,102 @@
         </div>
       </div>
     </header>
-    <nav>
-  
-    </nav>
-    <main>
-      <!--[ Advertisements area ]-->
-      <div class="ads-area">
-        <!--[ Fineshop - Top Widget Ad ]-->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-6450536625798530"
-             data-ad-slot="2684491596"
-             data-ad-format="auto"
-             data-full-width-responsive="true">
-        </ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({})</script>
+    <div class="main-inner">
+      <nav class="main-menu">
+        <div class="menu-wrapper">
+          <div class="menu-cont">
+            <ul class="menu-links">
+              <li class="alternate">
+                <a class="link" href="/tools">
+                  <i data-icon="home"></i>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="alternate">
+                <a class="link" href="/">
+                  <i data-icon="domain"></i>
+                  <span>Blog</span>
+                </a>
+              </li>
+              <li class="alternate break">
+                <a href="/p/contact.html">
+                  <i data-icon="contact_page"></i>
+                  <span>Contact</span>
+                </a>
+              </li>
+              <li class="dropdown">
+                <button type="button">
+                  <i data-icon="auto_mode"></i>
+                  <span>Generators</span>
+                </button>
+                <ul class="drop-links">
+                  <li>
+                    <a href="/tools/syntax-highlighter">
+                      <i data-icon="language"></i>
+                      <span>Syntax Highlighter</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/tools/thumbnail-generator/">
+                      <i data-icon="language"></i>
+                      <span>Thumbnail Generator</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <button type="button">
+                  <i data-icon="pages"></i>
+                  <span>Pages</span>
+                </button>
+                <ul class="drop-links">
+                  <li>
+                    <a href="/p/privacy.html">
+                      <i data-icon="policy"></i>
+                      <span>Privacy Policy</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/p/terms-and-conditions.html">
+                      <i data-icon="description"></i>
+                      <span>Terms Of Service</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="full-close" onclick="toggleMainMenu()"></div>
+      </nav>
+      <div class="main-cont">
+        <!--[ Advertisements area ]-->
+        <div class="ads-area">
+          <!--[ Fineshop - Top Widget Ad ]-->
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-6450536625798530"
+               data-ad-slot="2684491596"
+               data-ad-format="auto"
+               data-full-width-responsive="true">
+          </ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({})</script>
+        </div>
+        <main class="page-cont">
+          <p>Welcome to Fineshop Tools</p>
+          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        </main>
+        <footer>
+          <div class="footer-wrapper">
+
+          </div>
+        </footer>
       </div>
-    </main>
+    </div>
   </div>
+  <!--[ Scripts ]-->
+  <script src="/tools/common/js/foot.js"></script>
   <!--[ Modular scripts ]-->
   <!--<script type="module" src="/src/script.js"></script>-->
 </body>
